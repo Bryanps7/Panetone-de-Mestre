@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="gerarRespostas.js" defer></script>
+    <script type="module" src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,8 @@
         <button><img src="menu2.png" alt="Clique para abrir o menu" class="menu" id="menu" width="38px" height="38px"></button>
     </header>
 
-    <div class="menuPG">
+    <div style="display: none;" class="menuPG">
+        
         <img src="logo.png" alt="" class="logo" width="147px" height="147px">
 
         <button><img src="iconX.png" alt="Clique para abrir o menu" class="closeMenu" id="closeMenu" width="38px"
@@ -36,8 +37,8 @@
 
 
     <main>
-        <input type="number" id="qnt" placeholder="Quantidade de Panetones:"><br>
-        <input type="number" id="massa" placeholder="Massa Unitaria do Panetone (g):"><br>
+        <input type="number" id="quantidade" placeholder="Quantidade de Panetones:"><br>
+        <input type="number" id="tamanho" placeholder="Massa Unitaria do Panetone (g):"><br>
         <input type="number" id="raio" placeholder="Raio desejado do Panetone (cm):"><br>
         <input type="number" id="altura" placeholder="Altura desejada do Panetone (cm):"><br>
         <button id="calcular">Calcular</button><br>

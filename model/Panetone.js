@@ -21,17 +21,17 @@ export default class Panetone {
     calcularMedida() {
         this.farinha = ((250 / 440) * this.tamanho).toFixed(2);
         this.fermento = ((10 / 440) * this.tamanho).toFixed(2);
-        this.leite = Math.round((60 / 440) * this.tamanho);
+        this.leite = ((60 / 440) * this.tamanho).toFixed(2);
         this.ovos = arredondar((2 / 440) * this.tamanho);
         this.manteiga = ((50 / 440) * this.tamanho).toFixed(2);
         this.acucar = ((70 / 440) * this.tamanho).toFixed(2);
-        this.baunilha = Math.round((5 / 440) * this.tamanho);
+        this.baunilha = ((5 / 440) * this.tamanho).toFixed(2);
         this.frutas = ((100 / 440) * this.tamanho).toFixed(2);
         this.uvas = ((50 / 440) * this.tamanho).toFixed(2);
         this.raspas = ((5 / 440) * this.tamanho).toFixed(2);
         this.sal = ((2 / 440) * this.tamanho).toFixed(2);
 
-        return this;
+        return this;    
     }
     calcularMedidaQuantidade() {
         this.farinhaTotal = this.farinha * this.quantidade;
