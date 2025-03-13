@@ -1,3 +1,16 @@
+const menu = document.getElementById('menu')
+const menuPG = document.getElementById('menuPG')
+
+menu.addEventListener("click", () => {
+    menuPG.style.display = "block"
+})
+
+const closeMenu = document.getElementById('closeMenu')
+closeMenu.addEventListener("click", () => {
+    menuPG.style.display = "none"
+})
+
+
 document.getElementById("calcular").addEventListener("click", () => {
 
     if (document.querySelector(".box")) return
@@ -20,4 +33,6 @@ document.getElementById("calcular").addEventListener("click", () => {
 
     document.getElementById("resposta").appendChild(box);
 })
+
+
 
