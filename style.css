@@ -103,7 +103,7 @@ td {
     padding: 5px;
 }
 
-td a{
+td a {
     font-family: "Roboto Condensed", sans-serif;
     color: rgb(28, 28, 184);
 }
@@ -112,34 +112,54 @@ th {
     background-color: #e8b4b0;
 }
 
-.menuPG{
+.menuPG {
+    display: none;
     position: absolute;
     z-index: 1;
     height: 100%;
     width: 100%;
     background-color: #AB7E7C;
-  
+    
 }
 
-.menuPG .logo{
-    opacity: 45%;
-}
-
-.menuPG .links{
+.menuPG main{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 50%;
 }
 
-.menuPG footer{
+.menuPG .logo {
     opacity: 45%;
+    
 }
 
-.menuPG button{
-   background-color: transparent;
+.menuPG .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
 }
 
-header button{
+.menuPG .links a {
+    color: #F8F8F8;
+    text-decoration: none;
+}
+
+.menuPG footer {
+    opacity: 45%;
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+}
+
+.menuPG button {
+    background-color: transparent;
+}
+
+header button {
     background-color: transparent;
 }
