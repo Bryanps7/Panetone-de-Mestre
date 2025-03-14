@@ -31,9 +31,10 @@ export default class Panetone {
         this.raspas = ((5 / 440) * this.tamanho).toFixed(2);
         this.sal = ((2 / 440) * this.tamanho).toFixed(2);
 
-        return this;    
+        return this; 
     }
     calcularMedidaQuantidade() {
+        this.calcularMedida()
         this.farinhaTotal = this.farinha * this.quantidade;
         this.fermentoTotal = this.fermento * this.quantidade;
         this.leiteTotal = this.leite * this.quantidade;
@@ -68,7 +69,7 @@ export default class Panetone {
     }
     calcularVolume() {
         this.volume = Math.PI * Math.pow(this.raio, 2) * this.altura
-        if (0.6 >= (this.tamanho / volume) <= 0.8) {
+        if (0.6 >= (this.tamanho / volume) && (this.tamanho / this.volume) <= 0.8) {
             return this.volume
         } else {
             return false
