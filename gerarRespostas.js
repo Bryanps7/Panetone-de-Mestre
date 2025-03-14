@@ -13,25 +13,25 @@ closeMenu.addEventListener("click", () => {
 
 document.getElementById("calcular").addEventListener("click", () => {
 
-    if (document.querySelector(".box")) return
+    if (document.querySelector(".box")) {
+        let box = document.createElement("div")
+        box.classList.add("box")
 
-    let box = document.createElement("div")
-    box.classList.add("box")
+        let volume = document.createElement("p")
+        volume.textContent = "Volume Resposta"
 
-    let volume = document.createElement("p")
-    volume.textContent = "Volume Resposta"
+        let preco = document.createElement("p")
+        preco.textContent = "Preço Final"
 
-    let preco = document.createElement("p")
-    preco.textContent = "Preço Final"
+        let massa = document.createElement("p")
+        massa.textContent = "Massa Específica"
 
-    let massa = document.createElement("p")
-    massa.textContent = "Massa Específica"
+        box.appendChild(volume);
+        box.appendChild(preco);
+        box.appendChild(massa);
 
-    box.appendChild(volume);
-    box.appendChild(preco);
-    box.appendChild(massa);
-
-    document.getElementById("resposta").appendChild(box);
+        document.getElementById("resposta").appendChild(box);
+    }
 })
 
 
