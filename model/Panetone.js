@@ -69,7 +69,7 @@ export default class Panetone {
     }
     calcularVolume() {
         this.volume = Math.PI * Math.pow(this.raio, 2) * this.altura
-        if (0.6 >= (this.tamanho / volume) && (this.tamanho / this.volume) <= 0.8) {
+        if (0.6 >= (this.tamanho / this.volume) && (this.tamanho / this.volume) <= 0.8) {
             return this.volume
         } else {
             return false
