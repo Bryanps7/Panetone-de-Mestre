@@ -34,6 +34,8 @@ export default class Panetone {
         return this;
     }
     calcularMedidaQuantidade() {
+        this.calcularMedida();
+
         this.farinhaTotal = this.farinha * this.quantidade;
         this.fermentoTotal = this.fermento * this.quantidade;
         this.leiteTotal = this.leite * this.quantidade;
@@ -67,17 +69,11 @@ export default class Panetone {
         return (this.calcularPreco()) * this.quantidade
     }
     calcularVolume() {
-        this.volume = Math.PI * Math.pow(this.raio, 2) * this.altura
-        if (0.6 >= (this.tamanho / volume) <= 0.8) {
-            return this.volume
+        this.volume = Math.PI * Math.pow(this.raio, 2) * this.altura;
+        if (0.6 >= (this.tamanho / this.volume) && (this.tamanho / this.volume) <= 0.8) {
+            return this.volume;
         } else {
-            return false
-        }
-        // Caso retorne "false" significa que a densidade é muito baixa, logo, teria que alterar ou a medida do panetona ou o raio e a altura
-    }
-    calcularVolumeTotal() {
-        if((this.calcularVolume()) != false){
-            return (this.calcularVolume()) * this.quantidade
+            return false;
         }
     }
 }
