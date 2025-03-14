@@ -31,11 +31,15 @@ export default class Panetone {
         this.raspas = ((5 / 440) * this.tamanho).toFixed(2);
         this.sal = ((2 / 440) * this.tamanho).toFixed(2);
 
-        return this;    
+        return this; 
     }
     calcularMedidaQuantidade() {
+<<<<<<< HEAD
         this.calcularMedida();
 
+=======
+        this.calcularMedida()
+>>>>>>> origin/feature/index.js
         this.farinhaTotal = this.farinha * this.quantidade;
         this.fermentoTotal = this.fermento * this.quantidade;
         this.leiteTotal = this.leite * this.quantidade;
@@ -69,9 +73,15 @@ export default class Panetone {
         return (this.calcularPreco()) * this.quantidade
     }
     calcularVolume() {
+<<<<<<< HEAD
         this.volume = Math.PI * Math.pow(this.raio, 2) * this.altura;
         if (0.6 >= (this.tamanho / this.volume) && (this.tamanho / this.volume) <= 0.8) {
             return this.volume;
+=======
+        this.volume = Math.PI * Math.pow(this.raio, 2) * this.altura
+        if (0.6 >= (this.tamanho / this.volume) && (this.tamanho / this.volume) <= 0.8) {
+            return this.volume
+>>>>>>> origin/feature/index.js
         } else {
             return false;
         }
