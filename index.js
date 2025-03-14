@@ -1,4 +1,4 @@
-import Panetone from "./model/Panetone.js"
+import Panetone from "../model/Panetone.js"
 
 let calcular = document.getElementById("calcular")
 
