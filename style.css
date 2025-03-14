@@ -143,6 +143,11 @@ th {
     font-size: 24px;
 }
 
+.menuPG .links a {
+    color: #F8F8F8;
+    text-decoration: none;
+}
+
 .menuPG footer {
     opacity: 45%;
     bottom: 0;

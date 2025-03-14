@@ -1,11 +1,11 @@
-const menu = document.getElementById('menu')
-const menuPG = document.getElementById('menuPG')
+let menu = document.getElementById('menu')
+let menuPG = document.getElementById('menuPG')
 
 menu.addEventListener("click", () => {
     menuPG.style.display = "block"
 })
 
-const closeMenu = document.getElementById('closeMenu')
+let closeMenu = document.getElementById('closeMenu')
 closeMenu.addEventListener("click", () => {
     menuPG.style.display = "none"
 })
